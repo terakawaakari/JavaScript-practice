@@ -1,3 +1,12 @@
+#point {
+  color: rgb(223, 64, 64);
+  font-size: xx-large;
+  font-weight: bold;
+  position: fixed;
+  top: 170px;
+  left: 492px;
+}
+
 #circle {
   position: relative;
   top: 200px;
@@ -6,9 +15,8 @@
   height: 400px;
   width: 400px;
   border-radius: 50%;
-  transform: rotate(-1800deg);
-  /* transform-origin:left bottom; */
-  transition: transform 2s;
+  transform: rotate(0);
+  transition: transform 0.5s;
 }
 
 .quarter {
@@ -43,4 +51,16 @@
   left: 0px;
   background-color: #feee7d;
   border-radius: 100% 0 0 0;
+}
+
+#stop {
+  position: absolute;
+  top: 120px;
+  left: 530px;
+}
+
+#start {
+  position: absolute;
+  top: 120px;
+  left: 410px;
 }

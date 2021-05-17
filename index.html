@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>ルーレット</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-<div id="circle">
-  <div class="quarter" id="quarter_1"></div>
-  <div class="quarter" id="quarter_2"></div>
-  <div class="quarter" id="quarter_3"></div>
-  <div class="quarter" id="quarter_4"></div>
-</div>
+  <head>
+    <meta charset="UTF-8">
+    <title>ルーレット</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<script src="jquery.min.js"></script>
-<script src="script.js"></script>
-</body>
+  <body>
+
+
+    <div id="point">▼</div>
+    <div id="circle">
+      <div class="quarter" id="quarter_1"></div>
+      <div class="quarter" id="quarter_2"></div>
+      <div class="quarter" id="quarter_3"></div>
+      <div class="quarter" id="quarter_4"></div>
+    </div>
+
+    <button type="button" id="start" onclick="start()">スタート</button>
+    <button type="button" id="stop" onclick="stop()">ストップ</button>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
 </html>

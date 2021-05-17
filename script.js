@@ -1,4 +1,20 @@
+var rotate = $("#circle");
+var roulette;
+var count = 0;
 
-$("#circle").on("click", function(){
-$("#circle").css( { transform: "rotate(0deg)" } );
-});
+function start() {
+    roulette = setInterval(function(){
+    count++;
+    if(count > 360){
+      count = 0;
+    }else{
+      rotate.css({ transform: "rotate("+ count*100+"deg)" });
+    }
+  }, 100);
+}
+
+function stop() {
+  if(roulette) {
+    clearInterval(roulette);
+  }
+}
